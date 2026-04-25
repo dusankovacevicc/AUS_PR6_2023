@@ -20,7 +20,7 @@ namespace dCom.ViewModel
         {
             try
             {
-                this.processingManager.ExecuteWriteCommand(ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, address, (int)CommandedValue);
+                this.processingManager.ExecuteWriteCommand(ConfigItem,configuration.GetTransactionId(),configuration.UnitAddress,ConfigItem.StartAddress,(int)CommandedValue);
             }
             catch (Exception ex)
             {
